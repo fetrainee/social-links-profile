@@ -9,6 +9,8 @@
     --font-family-inter: Inter, sans-serif;
     --font-line-height-preset-1: 150%;
     --font-letter-spacing-preset-1: 0;
+    --font-weight-preset-1: 700;
+    --font-weight-preset-2: 400;
     --font-text-preset-1: 1.5rem; /* 24px */
     --font-text-preset-2: 0.875rem; /* 14px */
     --spacing-preset-500: 2.5rem; /* 40px */
@@ -16,6 +18,8 @@
     --spacing-preset-200: 1rem; /* 16px */
     --spacing-preset-100: 0.5rem; /* 8px */
     --spacing-preset-50: 0.25rem; /* 4px */
+    --avatar-size: 88px;
+    --avatar-radius: 999px;
 }
 
 * {
@@ -45,4 +49,42 @@ section {
     padding: var(--spacing-preset-300);
     border-radius: 0.75rem;
     background-color: var(--color-grey-800);
+}
+
+section p {
+    color: var(--color-white);
+    font-size: var(--font-text-preset-2);
+    font-weight: var(--font-weight-preset-2);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-preset-300);
+}
+
+figure img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: var(--avatar-radius);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-preset-50);
+}
+
+header h1 {
+    color: var(--color-white);
+    font-size: var(--font-text-preset-1);
+    font-weight: var(--font-weight-preset-1);
+}
+
+header address {
+    color: var(--color-green);
+    font-size: var(--font-text-preset-2);
+    font-weight: var(--font-weight-preset-2);
 }
